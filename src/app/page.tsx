@@ -1,12 +1,11 @@
-import Footer from '@/sections/footer'
-import Info from '@/sections/info'
-import NavBar from '@/sections/navBar'
-import Search from '@/sections/search'
-import Image from 'next/image'
+import Footer from '@/components/footer'
+import Info from '@/components/info'
+import NavBar from '@/components/navBar'
+import Search from '@/components/search'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col">
+    <main className="flex flex-col min-h-screen">
       <NavBar />
       <Search />
       <Info />
