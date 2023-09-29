@@ -22,12 +22,12 @@ const NavBar: FC<NavBarProps> = ({ ...props }) => {
         </Link>
       </div>
       <div className="flex gap-2">
-        <Link href="/" className="hover:scale-110 transition-transform">
+        <button className="hover:scale-110 transition-transform">
           <IoSearchSharp size={28} />
-        </Link>
-        <Link href="/">
+        </button>
+        <button >
           <IoMenuSharp size={30} />
-        </Link>
+        </button>
       </div>
     </section>
   )
