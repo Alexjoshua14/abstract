@@ -40,7 +40,13 @@ const SearchBar: FC<SearchBarProps> = ({ className }) => {
                     onKeyDown={handleKeyPress}
                     {...field}
                   />
-                  <HiOutlineArrowRight size={22} />
+                  <button
+                    onClick={form.handleSubmit(onSubmit)}
+                    className="enabled:hover:scale-110 disabled:text-gray-500 transition-all"
+                    disabled={!form.formState.isValid}
+                  >
+                    <HiOutlineArrowRight size={22} />
+                  </button>
                 </div>
               </FormControl>
             </FormItem>
