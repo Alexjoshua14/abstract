@@ -1,4 +1,5 @@
 import { FC } from 'react'
+import SearchBar from './searchBar'
 
 interface SearchProps {
 
@@ -6,8 +7,11 @@ interface SearchProps {
 
 const Search: FC<SearchProps> = ({ }) => {
   return (
-    <section className="border-2 border-purple-200 h-[25rem]">
-      <h1>Search</h1>
+    <section className="flex flex-col h-[25rem] bg-purple-100 center p-24">
+      <h1 className="text-[4.25rem]">
+        How can we help?
+      </h1>
+      <SearchBar />
     </section>
   )
 }
