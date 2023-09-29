@@ -18,6 +18,7 @@ const config: Config = {
       white: colors.white,
       gray: colors.gray,
       neutral: colors.neutral,
+      teal: colors.teal,
       purple: {
         100: '#dadbf1'
       },

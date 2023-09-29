@@ -1,13 +1,18 @@
+import Link from 'next/link'
 import { FC } from 'react'
+import Card from './card'
+import { cardContent } from '@/data/cardContent'
 
-interface InfoProps {
-
-}
-
-const Info: FC<InfoProps> = ({ }) => {
+const Info: FC = ({ }) => {
   return (
-    <section className="border-2 border-pink-200 h-[65.5rem]">
-      <h1>Cards</h1>
+    <section
+      className="px-32 py-40 
+                grid grid-rows-3 grid-cols-2
+                gap-y-20 gap-x-14"
+    >
+      {cardContent.map((content) => (
+        <Card key={content.id} content={content} />
+      ))}
     </section>
   )
 }
