@@ -9,7 +9,7 @@ import { Separator } from './ui/separator'
 
 const NavBar: FC = ({ ...props }) => {
   const [searchBarDisplayed, showSearchBar] = useState(false);
-  const [menuDisplayed, showMenu] = useState(true);
+  const [menuDisplayed, showMenu] = useState(false);
 
   return (
     <section
