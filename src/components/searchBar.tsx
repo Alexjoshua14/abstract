@@ -8,10 +8,11 @@ import { HiOutlineArrowRight } from 'react-icons/hi'
 import { Form, FormControl, FormField, FormItem } from './ui/form'
 
 interface SearchBarProps {
+  icon: boolean,
   className?: string
 }
 
-const SearchBar: FC<SearchBarProps> = ({ className }) => {
+const SearchBar: FC<SearchBarProps> = ({ icon = true, className }) => {
 
   const { form, onSubmit, handleKeyPress } = useForm();
 
@@ -19,16 +20,16 @@ const SearchBar: FC<SearchBarProps> = ({ className }) => {
     <Form
       {...form}
     >
-      <form onSubmit={form.handleSubmit(onSubmit)} className="h-16 w-full">
+      <form onSubmit={form.handleSubmit(onSubmit)} className={cn("h-16 w-full", className)}>
         <FormField
           control={form.control}
           name="searchQuery"
           render={({ field }) => (
-            <FormItem>
-              <FormControl>
+            <FormItem className="h-full">
+              <FormControl className="h-full">
                 <div className={
                   cn(
-                    "h-16 border-[1px] border-black flex bg-white items-center px-2 rounded focus-within:border-blue-500",
+                    "h-full border-[1px] border-black flex bg-white items-center px-2 rounded focus-within:border-blue-500",
                     className
                   )
                 }
@@ -40,13 +41,15 @@ const SearchBar: FC<SearchBarProps> = ({ className }) => {
                     onKeyDown={handleKeyPress}
                     {...field}
                   />
-                  <button
-                    onClick={form.handleSubmit(onSubmit)}
-                    className="enabled:hover:scale-110 disabled:text-gray-500 transition-all"
-                    disabled={!form.formState.isValid}
-                  >
-                    <HiOutlineArrowRight size={22} />
-                  </button>
+                  {icon &&
+                    <button
+                      onClick={form.handleSubmit(onSubmit)}
+                      className="enabled:hover:scale-110 disabled:text-gray-500 transition-all"
+                      disabled={!form.formState.isValid}
+                    >
+                      <HiOutlineArrowRight size={22} />
+                    </button>
+                  }
                 </div>
               </FormControl>
             </FormItem>
