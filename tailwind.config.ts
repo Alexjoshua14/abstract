@@ -24,7 +24,7 @@ const config: Config = {
       },
       blue: {
         500: '#4c5fd5'
-      }
+      },
     },
     container: {
       center: true,
@@ -34,6 +34,9 @@ const config: Config = {
       },
     },
     extend: {
+      screens: {
+        'lg': '992px'
+      },
       keyframes: {
         "accordion-down": {
           from: { height: '0' },
