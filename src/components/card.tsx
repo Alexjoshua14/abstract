@@ -14,7 +14,7 @@ interface cardProps {
 
 const card: FC<cardProps> = ({ content, className, ...props }) => {
   return (
-    <div className={cn("flex gap-4 px-4 py-2", className)}>
+    <div className={cn("flex gap-4 px-4 py-2", className)} {...props}>
       <div className="w-20 px-2">
         ICON
       </div>
@@ -25,7 +25,7 @@ const card: FC<cardProps> = ({ content, className, ...props }) => {
         <p className="text-xl">
           {content.description}
         </p>
-        <Link href={content.link} className="py-2 text-lg font-light text-blue-500">
+        <Link href={content.link} className="py-2 text-lg font-light text-blue-500 whitespace-nowrap">
           {`Learn More -->`}
         </Link>
       </div>

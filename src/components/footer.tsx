@@ -1,16 +1,10 @@
 
 import { FC } from 'react'
-import Link from 'next/link'
 import { IoShapesSharp } from 'react-icons/io5'
 import { footerContent } from '@/data/footerContent'
-import { FooterSection } from '@/lib/validators/footerValidator'
 import NavList from './navList'
 
-interface FooterProps {
-
-}
-
-const Footer: FC<FooterProps> = ({ }) => {
+const Footer: FC = ({ }) => {
   return (
     <section className="min-w-fit flex flex-col lg:flex-row px-14 py-14 gap-6 bg-black text-white">
 

@@ -8,11 +8,11 @@ import { HiOutlineArrowRight } from 'react-icons/hi'
 import { Form, FormControl, FormField, FormItem } from './ui/form'
 
 interface SearchBarProps {
-  icon: boolean,
+  icon?: boolean,
   className?: string
 }
 
-const SearchBar: FC<SearchBarProps> = ({ icon = true, className }) => {
+const SearchBar: FC<SearchBarProps> = ({ icon = true, className, ...props }) => {
 
   const { form, onSubmit, handleKeyPress } = useForm();
 
@@ -20,7 +20,7 @@ const SearchBar: FC<SearchBarProps> = ({ icon = true, className }) => {
     <Form
       {...form}
     >
-      <form onSubmit={form.handleSubmit(onSubmit)} className={cn("h-16 w-full", className)}>
+      <form onSubmit={form.handleSubmit(onSubmit)} className={cn("h-16 w-full", className)} {...props}>
         <FormField
           control={form.control}
           name="searchQuery"
