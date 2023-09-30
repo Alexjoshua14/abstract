@@ -36,6 +36,7 @@ const config: Config = {
     },
     extend: {
       screens: {
+        'xs': '500px',
         'lg': '992px'
       },
       keyframes: {
