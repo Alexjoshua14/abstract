@@ -3,7 +3,7 @@ import { FooterContent } from "@/lib/validators/footerValidator"
 export const footerContent: FooterContent = [
   {
     id: 1,
-    sectionTitle: "Abstract",
+    sectionTitle: "Nebula",
     sectionItems: [
       {
         id: 101,
@@ -101,7 +101,7 @@ export const footerContent: FooterContent = [
     ],
     subcategory: {
         title: "Contact Us",
-        text: "info@abstract.com",
+        text: "humans@nebula.com",
         link: "/"
       },
   }

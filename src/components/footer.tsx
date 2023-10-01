@@ -23,7 +23,7 @@ const Footer: FC = ({ }) => {
           </p>
           <p>
             <s>
-              Abstract Studio Design, Inc.
+              Nebula Industries
             </s>
           </p>
           <p>

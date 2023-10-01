@@ -30,7 +30,7 @@ const NavBar: FC = ({ ...props }) => {
           <div className="flex gap-1 xs:gap-2 items-center text-xl xs:text-2xl whitespace-nowrap">
             <Link className="flex gap-1 hover:text-neutral-300 font-medium text-2xl" href="/">
               <IoShapesSharp size={30} />
-              Abstract
+              Nebula
             </Link>
             <p className="hover:cursor-default font-medium">
               |

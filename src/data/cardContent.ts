@@ -1,39 +1,55 @@
+import { HiUserGroup } from 'react-icons/hi'
+import { MdAccountBalance, MdOutlineVerifiedUser, MdOutlinePayment } from 'react-icons/md'
+import { LiaConnectdevelop } from 'react-icons/lia'
+import { GrOptimize } from 'react-icons/gr'
 
 export const cardContent = [
   {
     id: 1,
-    title: "Using Abstract",
-    description: "Abstract lets you manage, version, and document your designs in one place.",
+    title: "Using Nebula",
+    description: "Nebula empowers you to centralize, version, and document your designs effortlessly.",
+    icon: LiaConnectdevelop,
+    iconSize: 50,
     link: "/"
   },
   {
     id: 2,
     title: "Manage your account",
-    description: "Configure your account settings, such as your email, profile details, and password.",
+    description: "Customize your account settings, including your email, profile information, and password.",
+    icon: MdAccountBalance,
+    iconSize: 50,
     link: "/"
   },
   {
     id: 3,
-    title: "Manage organizations, teams, and projects",
-    description: "Use Abstract organizations, teams, and projects to organize your people and your work.",
+    title: "Optimize your workflow",
+    description: "Leverage Abstract to efficiently organize your people and projects.",
+    icon: GrOptimize,
+    iconSize: 50,
     link: "/"
   },
   {
     id: 4,
-    title: "Manage billing",
-    description: "Change subscriptions and payment details.",
+    title: "Billing Management",
+    description: "Easily update your subscriptions and payment information.",
+    icon: MdOutlinePayment,
+    iconSize: 50,
     link: "/"
   },
   {
     id: 5,
-    title: "Authenticate to Abstract",
-    description: "Set up and configure SSO, SCIM, and Just-in-Time provisioning.",
+    title: "Seamless Authentication Setup",
+    description: "Configure SSO, SCIM, and Just-in-Time provisioning effortlessly.",
+    icon: MdOutlineVerifiedUser,
+    iconSize: 50,
     link: "/"
   },
   {
     id: 6,
-    title: "Abstract support",
-    description: "Get in touch with a human.",
+    title: "Personalized Support",
+    description: "Connect with our dedicated team of humans for assistance.",
+    icon: HiUserGroup,
+    iconSize: 50,
     link: "/"
   }
 ]

@@ -20,8 +20,8 @@ const config: Config = {
       neutral: colors.neutral,
       teal: colors.teal,
       red: colors.red,
-      purple: {
-        100: '#dadbf1'
+      primary: {
+        100: '#59A96A'
       },
       blue: {
         500: '#4c5fd5'
