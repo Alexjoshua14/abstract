@@ -13,7 +13,7 @@ const Disclaimer = () => {
     setTimeout(() => {
       setShow(true)
     }, 2500)
-  })
+  }, [])
 
   if (!show) {
     return null;
