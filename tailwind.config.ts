@@ -14,17 +14,19 @@ const config: Config = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      black: colors.black,
-      white: colors.white,
+      black: '#181D27',
+      white: '#F7F9F9',
       gray: colors.gray,
       neutral: colors.neutral,
       teal: colors.teal,
-      red: colors.red,
+      red: {
+        500: '#CE4760'
+      },
       primary: {
-        100: '#59A96A'
+        100: '#21A179'
       },
       blue: {
-        500: '#4c5fd5'
+        500: '#6883BA'
       },
     },
     container: {

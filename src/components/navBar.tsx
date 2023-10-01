@@ -14,7 +14,7 @@ const NavBar: FC = ({ ...props }) => {
   return (
     <section
       className={`h-[5.5rem] px-3 md:px-14 py-6 flex items-center justify-between flex-wrap
-      ${searchBarDisplayed ? "bg-white" : "bg-black text-white"}
+      ${searchBarDisplayed ? "bg-white" : "inverted"}
       `}
       {...props}
     >

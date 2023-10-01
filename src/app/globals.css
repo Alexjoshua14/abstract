@@ -3,10 +3,13 @@
 @tailwind utilities;
 
 body {
-  color: var(--black);
-  background: var(--white);
+  @apply bg-white text-black;
 }
 
 .center {
   @apply items-center justify-center;
+}
+
+.inverted {
+  @apply bg-black text-white;
 }

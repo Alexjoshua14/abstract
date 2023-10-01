@@ -23,7 +23,7 @@ export const cardContent = [
   {
     id: 3,
     title: "Optimize your workflow",
-    description: "Leverage Abstract to efficiently organize your people and projects.",
+    description: "Leverage Nebula to efficiently organize your people and projects.",
     icon: GrOptimize,
     iconSize: 50,
     link: "/"
@@ -39,7 +39,7 @@ export const cardContent = [
   {
     id: 5,
     title: "Seamless Authentication Setup",
-    description: "Configure SSO, SCIM, and Just-in-Time provisioning effortlessly.",
+    description: "Configure SSO, SCIM, and Just-in-Time provisioning in picoseconds.",
     icon: MdOutlineVerifiedUser,
     iconSize: 50,
     link: "/"

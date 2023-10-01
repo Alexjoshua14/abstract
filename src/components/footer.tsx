@@ -6,7 +6,7 @@ import NavList from './navList'
 
 const Footer: FC = ({ }) => {
   return (
-    <section className="min-w-fit flex flex-col lg:flex-row px-14 py-14 gap-6 bg-black text-white">
+    <section className="min-w-fit flex flex-col lg:flex-row px-14 py-14 gap-6 inverted">
 
       <nav className="flex-1 grid grid-rows-2 grid-cols-2 lg:flex lg:justify-around min-w-fit w-full">
         {footerContent.map(section => (
