@@ -22,9 +22,7 @@ const config: Config = {
       red: {
         500: '#CE4760'
       },
-      primary: {
-        100: '#21A179'
-      },
+      primary: '#21a179',
       blue: {
         500: '#6883BA'
       },

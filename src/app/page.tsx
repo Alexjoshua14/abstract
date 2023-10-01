@@ -6,8 +6,10 @@ import Search from '@/components/search'
 export default function Home() {
   return (
     <main className="flex flex-col min-h-screen">
-      <NavBar />
-      <Search />
+      <div className="bg-primary">
+        <NavBar />
+        <Search />
+      </div>
       <Info />
       <Footer />
     </main>

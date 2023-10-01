@@ -1,19 +1,25 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Disclaimer = () => {
-  const [show, setShow] = useState<boolean>(true);
+  const [show, setShow] = useState<boolean>(false);
 
   const close = () => {
     setShow(false);
   }
 
+  useEffect(() => {
+    setTimeout(() => {
+      setShow(true)
+    }, 2500)
+  })
+
   if (!show) {
     return null;
   }
   return (
-    <dialog className="w-full min-h-[10rem] sm:min-h-[10rem] flex z-50 bg-red-500 px-8 py-2 bg-opacity-80 backdrop-blur-lg" open>
+    <dialog className="w-full min-h-[10rem] sm:min-h-[10rem] flex z-50 bg-red-500 px-8 py-2 bg-opacity-80 backdrop-blur-lg transition-all">
       <section className="flex items-center justify-between w-full gap-8">
         <div className="flex flex-col">
           <h1 className="text-3xl font-bold">

@@ -1,9 +1,11 @@
 'use client'
 
-import Link from 'next/link'
 import { FC, useState } from 'react'
+import Link from 'next/link'
+import { motion } from 'framer-motion'
 import { IoMenuSharp, IoSearchSharp, IoShapesSharp, IoClose } from 'react-icons/io5'
 import { TfiClose } from 'react-icons/tfi'
+import { navBarVariants } from '@/lib/variants/navBarVariant'
 import SearchBar from './searchBar'
 import { Separator } from './ui/separator'
 
@@ -12,10 +14,14 @@ const NavBar: FC = ({ ...props }) => {
   const [menuDisplayed, showMenu] = useState(false);
 
   return (
-    <section
+    <motion.section
       className={`h-[5.5rem] px-3 md:px-14 py-6 flex items-center justify-between flex-wrap
       ${searchBarDisplayed ? "bg-white" : "inverted"}
       `}
+      initial="hidden"
+      animate="visible"
+      variants={navBarVariants}
+      transition={{ duration: 0.3, ease: "easeInOut" }}
       {...props}
     >
       {searchBarDisplayed ?
@@ -62,7 +68,7 @@ const NavBar: FC = ({ ...props }) => {
           </div>
         </div>
       }
-    </section>
+    </motion.section>
   )
 }
 
