@@ -20,7 +20,7 @@ const Disclaimer = () => {
             {`Disclaimer:`}
           </h1>
           <p className="text-xl font-medium">
-            {`This site is a recreation of Abstract's Help page. It is not affiliated with Abstract in any way.`}
+            {`The user interface of this website is heavily inspired by Abstract's Help page. It is not affiliated with Abstract in any way.`}
           </p>
         </div>
         <button aria-label="close disclaimer" onClick={close} className="font-medium bg-gray-200 rounded-full px-4 py-2 bg-opacity-80 backdrop-blur-lg">
