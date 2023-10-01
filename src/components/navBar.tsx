@@ -43,7 +43,7 @@ const NavBar: FC = ({ ...props }) => {
             <button onClick={() => showSearchBar(true)} className="hover:scale-110 transition-transform">
               <IoSearchSharp size={28} />
             </button>
-            <button onClick={() => showMenu((prev) => !prev)} className="w-8">
+            <button onClick={() => showMenu((prev) => !prev)} className="w-8 hover:scale-110 transition-transform">
               {menuDisplayed ? <TfiClose size={20} /> : <IoMenuSharp size={30} />}
             </button>
           </div>
